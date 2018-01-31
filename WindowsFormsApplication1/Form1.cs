@@ -402,11 +402,14 @@ namespace WindowsFormsApplication1
             {
                 CustomerName = itemChecked.ToString();
 
-                XmlNodeList nodeList = xml.DocumentElement.SelectNodes(String.Format("/dataroot/Customer[CustomerName='{0}']", CustomerName));
-                XmlNodeList nodeList1 = xml.DocumentElement.SelectNodes(String.Format("/dataroot/Customer[CustomerName='{0}']", CustomerName));
+                XmlNode nodeListCustomer = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customer[CustomerName='{0}']/Customer.ID", CustomerName));
+                XmlNode nodeListInvoice = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customer[CustomerName='{0}']/Invoice.ID", CustomerName));
 
-                report["CustomerList"] = int.Parse(customerIdTxtBox.Text);
-                report["InvoiceList"] = int.Parse(invoiceIdTxtBox.Text);
+                var temp = nodeListCustomer.InnerText;
+                var temp1 = nodeListInvoice.InnerText;
+
+                report["CustomerList"] = int.Parse(temp);
+                report["InvoiceList"] = int.Parse(temp1);
 
                 report.Render();
 
