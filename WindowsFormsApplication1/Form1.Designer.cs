@@ -49,6 +49,9 @@
             this.settingButton = new System.Windows.Forms.Button();
             this.progressButton = new System.Windows.Forms.Button();
             this.customIDBox = new System.Windows.Forms.GroupBox();
+            this.invoiceIdTxtBox = new System.Windows.Forms.TextBox();
+            this.customInvoiceCmBox = new System.Windows.Forms.ComboBox();
+            this.showDataGridBtn = new System.Windows.Forms.Button();
             this.saveCustRep = new System.Windows.Forms.Button();
             this.genCustRep = new System.Windows.Forms.Button();
             this.customRepName = new System.Windows.Forms.Label();
@@ -56,12 +59,9 @@
             this.customIDComboBox = new System.Windows.Forms.ComboBox();
             this.InvoceIDLabel = new System.Windows.Forms.Label();
             this.customerIDLabel = new System.Windows.Forms.Label();
-            this.invoiceIdTxtBox = new System.Windows.Forms.TextBox();
             this.customerIdTxtBox = new System.Windows.Forms.TextBox();
-            this.showDataGridBtn = new System.Windows.Forms.Button();
             this.customerCheckListBox = new System.Windows.Forms.CheckedListBox();
             this.genCheckedBtn = new System.Windows.Forms.Button();
-            this.customInvoiceCmBox = new System.Windows.Forms.ComboBox();
             this.customIDBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -326,6 +326,32 @@
             this.customIDBox.TabStop = false;
             this.customIDBox.Text = "Custom";
             // 
+            // invoiceIdTxtBox
+            // 
+            this.invoiceIdTxtBox.Location = new System.Drawing.Point(61, 79);
+            this.invoiceIdTxtBox.Name = "invoiceIdTxtBox";
+            this.invoiceIdTxtBox.Size = new System.Drawing.Size(26, 20);
+            this.invoiceIdTxtBox.TabIndex = 1;
+            this.invoiceIdTxtBox.Visible = false;
+            // 
+            // customInvoiceCmBox
+            // 
+            this.customInvoiceCmBox.FormattingEnabled = true;
+            this.customInvoiceCmBox.Location = new System.Drawing.Point(93, 79);
+            this.customInvoiceCmBox.Name = "customInvoiceCmBox";
+            this.customInvoiceCmBox.Size = new System.Drawing.Size(40, 21);
+            this.customInvoiceCmBox.TabIndex = 23;
+            // 
+            // showDataGridBtn
+            // 
+            this.showDataGridBtn.Location = new System.Drawing.Point(9, 182);
+            this.showDataGridBtn.Name = "showDataGridBtn";
+            this.showDataGridBtn.Size = new System.Drawing.Size(124, 23);
+            this.showDataGridBtn.TabIndex = 22;
+            this.showDataGridBtn.Text = "Show xml data";
+            this.showDataGridBtn.UseVisualStyleBackColor = true;
+            this.showDataGridBtn.Click += new System.EventHandler(this.showDataGridBtn_Click);
+            // 
             // saveCustRep
             // 
             this.saveCustRep.Location = new System.Drawing.Point(74, 153);
@@ -390,30 +416,12 @@
             this.customerIDLabel.TabIndex = 2;
             this.customerIDLabel.Text = "CustomerID";
             // 
-            // invoiceIdTxtBox
-            // 
-            this.invoiceIdTxtBox.Location = new System.Drawing.Point(61, 79);
-            this.invoiceIdTxtBox.Name = "invoiceIdTxtBox";
-            this.invoiceIdTxtBox.Size = new System.Drawing.Size(26, 20);
-            this.invoiceIdTxtBox.TabIndex = 1;
-            this.invoiceIdTxtBox.Visible = false;
-            // 
             // customerIdTxtBox
             // 
             this.customerIdTxtBox.Location = new System.Drawing.Point(94, 48);
             this.customerIdTxtBox.Name = "customerIdTxtBox";
             this.customerIdTxtBox.Size = new System.Drawing.Size(39, 20);
             this.customerIdTxtBox.TabIndex = 0;
-            // 
-            // showDataGridBtn
-            // 
-            this.showDataGridBtn.Location = new System.Drawing.Point(9, 182);
-            this.showDataGridBtn.Name = "showDataGridBtn";
-            this.showDataGridBtn.Size = new System.Drawing.Size(124, 23);
-            this.showDataGridBtn.TabIndex = 22;
-            this.showDataGridBtn.Text = "Show xml data";
-            this.showDataGridBtn.UseVisualStyleBackColor = true;
-            this.showDataGridBtn.Click += new System.EventHandler(this.showDataGridBtn_Click);
             // 
             // customerCheckListBox
             // 
@@ -433,14 +441,7 @@
             this.genCheckedBtn.TabIndex = 23;
             this.genCheckedBtn.Text = "Generate checked";
             this.genCheckedBtn.UseVisualStyleBackColor = true;
-            // 
-            // customInvoiceCmBox
-            // 
-            this.customInvoiceCmBox.FormattingEnabled = true;
-            this.customInvoiceCmBox.Location = new System.Drawing.Point(93, 79);
-            this.customInvoiceCmBox.Name = "customInvoiceCmBox";
-            this.customInvoiceCmBox.Size = new System.Drawing.Size(40, 21);
-            this.customInvoiceCmBox.TabIndex = 23;
+            this.genCheckedBtn.Click += new System.EventHandler(this.genCheckedBtn_Click);
             // 
             // Form1
             // 

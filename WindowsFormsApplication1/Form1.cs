@@ -388,5 +388,34 @@ namespace WindowsFormsApplication1
         {
             customIDBox.Visible = !customIDBox.Visible;
         }
+
+        private void genCheckedBtn_Click(object sender, EventArgs e)
+        {
+            var xml = new XmlDocument();
+            xml.Load(pathToXml);
+
+            string CustomerName;
+            string InvoiceId;
+
+
+            foreach (object itemChecked in customerCheckListBox.CheckedItems)
+            {
+                CustomerName = itemChecked.ToString();
+
+                XmlNodeList nodeList = xml.DocumentElement.SelectNodes(String.Format("/dataroot/Customer[CustomerName='{0}']", CustomerName));
+                XmlNodeList nodeList1 = xml.DocumentElement.SelectNodes(String.Format("/dataroot/Customer[CustomerName='{0}']", CustomerName));
+
+                report["CustomerList"] = int.Parse(customerIdTxtBox.Text);
+                report["InvoiceList"] = int.Parse(invoiceIdTxtBox.Text);
+
+                report.Render();
+
+                StiPdfExportSettings pdfSettings = new StiPdfExportSettings();
+
+                report.ExportDocument(StiExportFormat.Pdf, pathToReports + repName.Text + " - Packaging Summary.Pdf");
+
+                //MessageBox.Show(itemChecked.ToString() + " " + customerCheckListBox.GetItemCheckState(customerCheckListBox.Items.IndexOf(itemChecked)).ToString() + ".");
+            }
+        }
     }
 }
