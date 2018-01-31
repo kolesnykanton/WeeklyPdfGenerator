@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataroot xmlns:od="urn:schemas-microsoft-com:officedata" generated="2018-01-31T16:11:48">
+<Customer>
+<CustomerName>Aimia</CustomerName>
+<Customer.ID>106</Customer.ID>
+<InvoceName>VSL10491</InvoceName>
+<Invoice.ID>118</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Airbus Group</CustomerName>
+<Customer.ID>69</Customer.ID>
+<InvoceName>Sales Order VS2735</InvoceName>
+<Invoice.ID>60</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Cameron International Corporation</CustomerName>
+<Customer.ID>71</Customer.ID>
+<InvoceName>Sales Order #VS2597</InvoceName>
+<Invoice.ID>62</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Care UK</CustomerName>
+<Customer.ID>72</Customer.ID>
+<InvoceName>Invoice VSL10053</InvoceName>
+<Invoice.ID>63</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Intuit Inc.</CustomerName>
+<Customer.ID>77</Customer.ID>
+<InvoceName>Invoice VS8324</InvoceName>
+<Invoice.ID>71</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Mace Group</CustomerName>
+<Customer.ID>81</Customer.ID>
+<InvoceName>Invoice VSL10214</InvoceName>
+<Invoice.ID>75</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Middlesex Hospital</CustomerName>
+<Customer.ID>82</Customer.ID>
+<InvoceName>Sales Order VS2960</InvoceName>
+<Invoice.ID>76</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Morrisons</CustomerName>
+<Customer.ID>105</Customer.ID>
+<InvoceName>VSL0401</InvoceName>
+<Invoice.ID>116</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Munich Reinsurance America</CustomerName>
+<Customer.ID>85</Customer.ID>
+<InvoceName>VS3531</InvoceName>
+<Invoice.ID>122</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Plymouth University</CustomerName>
+<Customer.ID>88</Customer.ID>
+<InvoceName>Custom 100</InvoceName>
+<InvoceName>Sales Order VSL0322</InvoceName>
+<InvoceName>Invoice VSL10351</InvoceName>
+<Invoice.ID>117</Invoice.ID>
+<Invoice.ID>99</Invoice.ID>
+<Invoice.ID>85</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Polo Ralph Lauren</CustomerName>
+<Customer.ID>89</Customer.ID>
+<InvoceName>Sales Order VS2624</InvoceName>
+<Invoice.ID>89</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Progressive Insurance</CustomerName>
+<Customer.ID>107</Customer.ID>
+<InvoceName>EVAL 1</InvoceName>
+<Invoice.ID>119</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Robert Woods Johnson Foundation</CustomerName>
+<Customer.ID>90</Customer.ID>
+<InvoceName>VS8757</InvoceName>
+<Invoice.ID>111</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Smart Service Desk</CustomerName>
+<Customer.ID>104</Customer.ID>
+<InvoceName>VSL10464</InvoceName>
+<Invoice.ID>115</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Tullow Oil</CustomerName>
+<Customer.ID>93</Customer.ID>
+<InvoceName>VSL10497</InvoceName>
+<Invoice.ID>94</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>UMASS Medical School</CustomerName>
+<Customer.ID>94</Customer.ID>
+<InvoceName>VS8114</InvoceName>
+<Invoice.ID>96</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Universal Music</CustomerName>
+<Customer.ID>95</Customer.ID>
+<InvoceName>Custom 200</InvoceName>
+<Invoice.ID>106</Invoice.ID>
+</Customer>
+<Customer>
+<CustomerName>Weyerhaeuser</CustomerName>
+<Customer.ID>99</Customer.ID>
+<InvoceName>VS3260</InvoceName>
+<Invoice.ID>110</Invoice.ID>
+</Customer>
+</dataroot>
