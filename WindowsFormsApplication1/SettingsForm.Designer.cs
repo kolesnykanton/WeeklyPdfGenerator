@@ -36,6 +36,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pathXmlLabel = new System.Windows.Forms.Label();
             this.xmlPathTxtBox = new System.Windows.Forms.TextBox();
+            this.mailTestBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // mrtFilePath
@@ -81,7 +82,7 @@
             // 
             // applyButton
             // 
-            this.applyButton.Location = new System.Drawing.Point(59, 133);
+            this.applyButton.Location = new System.Drawing.Point(12, 247);
             this.applyButton.Name = "applyButton";
             this.applyButton.Size = new System.Drawing.Size(111, 32);
             this.applyButton.TabIndex = 4;
@@ -115,11 +116,22 @@
             this.xmlPathTxtBox.TabIndex = 8;
             this.xmlPathTxtBox.Text = global::weekly_namespace.Properties.Settings.Default.XmlPath;
             // 
+            // mailTestBtn
+            // 
+            this.mailTestBtn.Location = new System.Drawing.Point(15, 149);
+            this.mailTestBtn.Name = "mailTestBtn";
+            this.mailTestBtn.Size = new System.Drawing.Size(75, 23);
+            this.mailTestBtn.TabIndex = 9;
+            this.mailTestBtn.Text = "mail_test";
+            this.mailTestBtn.UseVisualStyleBackColor = true;
+            this.mailTestBtn.Click += new System.EventHandler(this.mailTestBtn_Click);
+            // 
             // SettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(264, 291);
+            this.Controls.Add(this.mailTestBtn);
             this.Controls.Add(this.xmlPathTxtBox);
             this.Controls.Add(this.pathXmlLabel);
             this.Controls.Add(this.label1);
@@ -144,5 +156,6 @@
         public System.Windows.Forms.TextBox xmlPathTxtBox;
         public System.Windows.Forms.TextBox mrtFilePath;
         public System.Windows.Forms.TextBox reportDirPath;
+        private System.Windows.Forms.Button mailTestBtn;
     }
 }

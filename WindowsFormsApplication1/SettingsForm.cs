@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using weekly_namespace.Properties;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace WindowsFormsApplication1
 {
@@ -39,6 +40,16 @@ namespace WindowsFormsApplication1
             reportDirPath_TextChanged(sender, e);
             this.Hide();
 
+        }
+
+        private void mailTestBtn_Click(object sender, EventArgs e)
+        {
+            Outlook.Application mailApplication = new Outlook.Application();
+
+            Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(@"e:\VS\#TEMPLATES\Aimia_WeeklySummary.oft") as Outlook.MailItem;
+
+            mail.Subject = "Congratulations";
+            mail.Display(true);
         }
     }
 }
