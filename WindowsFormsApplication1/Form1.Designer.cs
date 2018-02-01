@@ -55,7 +55,7 @@
             this.saveCustRep = new System.Windows.Forms.Button();
             this.genCustRep = new System.Windows.Forms.Button();
             this.customRepName = new System.Windows.Forms.Label();
-            this.repName = new System.Windows.Forms.TextBox();
+            this.repNameTxtBox = new System.Windows.Forms.TextBox();
             this.customIDComboBox = new System.Windows.Forms.ComboBox();
             this.InvoceIDLabel = new System.Windows.Forms.Label();
             this.customerIDLabel = new System.Windows.Forms.Label();
@@ -314,7 +314,7 @@
             this.customIDBox.Controls.Add(this.saveCustRep);
             this.customIDBox.Controls.Add(this.genCustRep);
             this.customIDBox.Controls.Add(this.customRepName);
-            this.customIDBox.Controls.Add(this.repName);
+            this.customIDBox.Controls.Add(this.repNameTxtBox);
             this.customIDBox.Controls.Add(this.customIDComboBox);
             this.customIDBox.Controls.Add(this.InvoceIDLabel);
             this.customIDBox.Controls.Add(this.customerIDLabel);
@@ -381,12 +381,13 @@
             this.customRepName.TabIndex = 6;
             this.customRepName.Text = "Custom report name";
             // 
-            // repName
+            // repNameTxtBox
             // 
-            this.repName.Location = new System.Drawing.Point(9, 126);
-            this.repName.Name = "repName";
-            this.repName.Size = new System.Drawing.Size(124, 20);
-            this.repName.TabIndex = 5;
+            this.repNameTxtBox.Location = new System.Drawing.Point(9, 126);
+            this.repNameTxtBox.MaximumSize = new System.Drawing.Size(200, 40);
+            this.repNameTxtBox.Name = "repNameTxtBox";
+            this.repNameTxtBox.Size = new System.Drawing.Size(124, 20);
+            this.repNameTxtBox.TabIndex = 5;
             // 
             // customIDComboBox
             // 
@@ -447,7 +448,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(376, 339);
+            this.ClientSize = new System.Drawing.Size(372, 342);
             this.Controls.Add(this.genCheckedBtn);
             this.Controls.Add(this.customerCheckListBox);
             this.Controls.Add(this.customIDBox);
@@ -509,7 +510,7 @@
         private System.Windows.Forms.Label customerIDLabel;
         private System.Windows.Forms.TextBox invoiceIdTxtBox;
         private System.Windows.Forms.Label customRepName;
-        private System.Windows.Forms.TextBox repName;
+        private System.Windows.Forms.TextBox repNameTxtBox;
         private System.Windows.Forms.Button saveCustRep;
         private System.Windows.Forms.Button genCustRep;
         private System.Windows.Forms.Button showDataGridBtn;
