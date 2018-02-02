@@ -285,7 +285,7 @@ namespace WindowsFormsApplication1
         private void progressButton_Click(object sender, EventArgs e)
         {
             report["CustomerList"] = 107;
-            report["InvoiceList"] = 0;
+            report["InvoiceList"] = 123;
 
             report.Render();
 
@@ -366,7 +366,7 @@ namespace WindowsFormsApplication1
         private void genCustRep_Click(object sender, EventArgs e)
         {
             report["CustomerList"] = int.Parse(customerIdTxtBox.Text);
-            report["InvoiceList"] = int.Parse(invoiceIdTxtBox.Text);
+            report["InvoiceList"] = int.Parse(customInvoiceCmBox.Text);
 
             report.Render();
 

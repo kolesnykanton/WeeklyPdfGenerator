@@ -448,7 +448,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(372, 342);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(391, 361);
             this.Controls.Add(this.genCheckedBtn);
             this.Controls.Add(this.customerCheckListBox);
             this.Controls.Add(this.customIDBox);
