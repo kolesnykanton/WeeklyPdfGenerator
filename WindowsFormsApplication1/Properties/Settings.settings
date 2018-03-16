@@ -11,13 +11,13 @@
       <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="d:\Friday Report\Packaging.accdb"</Value>
     </Setting>
     <Setting Name="XmlPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">f:/VSProjects/VerismicWeekly/xml/AAAA.xml</Value>
+      <Value Profile="(Default)">c:/Users/antonk/Documents/Visual Studio 2015/Projects/WindowsFormsApplication1/Dependecies/xml/AAAA.xml</Value>
     </Setting>
     <Setting Name="mrtPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">f:/VSProjects/VerismicWeekly/</Value>
+      <Value Profile="(Default)">d:\Friday Report\</Value>
     </Setting>
     <Setting Name="reportDirPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">f:/VSProjects/VerismicWeekly/</Value>
+      <Value Profile="(Default)">d:\Friday Report\</Value>
     </Setting>
   </Settings>
 </SettingsFile>

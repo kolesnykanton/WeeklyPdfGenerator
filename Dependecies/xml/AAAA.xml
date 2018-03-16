@@ -65,6 +65,13 @@
 			<ReportName>Munich Reinsurance America - Packaging Summary (2017)</ReportName>
 		</Customer>
 		<Customer>
+			<CustomerName>Munich Reinsurance America</CustomerName>
+			<Customer.ID>85</Customer.ID>
+			<Invoice.ID>124</Invoice.ID>
+			<InvoceName>VS3581</InvoceName>
+			<ReportName>Munich Reinsurance America - Packaging Summary (2018)</ReportName>
+		</Customer>
+		<Customer>
 			<CustomerName>Plymouth University</CustomerName>
 			<Customer.ID>88</Customer.ID>
 			<Invoice.ID>99</Invoice.ID>
@@ -95,8 +102,8 @@
 		<Customer>
 			<CustomerName>Progressive Insurance</CustomerName>
 			<Customer.ID>107</Customer.ID>
-			<Invoice.ID>119</Invoice.ID>
-			<InvoceName>EVAL 1</InvoceName>
+			<Invoice.ID>123</Invoice.ID>
+			<InvoceName>VS3541</InvoceName>
 			<ReportName>Progressive Insurance - Packaging Summary</ReportName>
 		</Customer>
 		<Customer>

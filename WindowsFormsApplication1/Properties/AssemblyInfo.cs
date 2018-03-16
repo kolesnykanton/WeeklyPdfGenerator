@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Verismic Software Inc.")]
 [assembly: AssemblyProduct("Weekly Generator")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("2018")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
