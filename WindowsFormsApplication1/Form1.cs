@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using System.Xml;
 using weekly_namespace;
 using weekly_namespace.Properties;
+using Outlook = Microsoft.Office.Interop.Outlook;
 
 namespace WindowsFormsApplication1
 {
@@ -333,6 +334,37 @@ namespace WindowsFormsApplication1
                 sf.ShowDialog();
         }
 
+        private void mailButton_Click(object sender, EventArgs e)
+        {
+                        
+            var doc = new XmlDocument();
+            doc.Load(Settings.Default.XmlPath);
+            XmlNodeList nodeList = doc.DocumentElement.SelectNodes("/dataroot/Customers/Customer");
+
+            foreach (object itemChecked in customerCheckListBox.CheckedItems)
+            {
+
+                string CustomerName = itemChecked.ToString();
+
+                XmlNode nodeListReportName = doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", CustomerName));
+
+                Outlook.Application mailApplication = new Outlook.Application();
+
+                Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(@"d:\Friday Report\#TEMPLATES\template.oft") as Outlook.MailItem;
+                mail.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
+                var ReportName = nodeListReportName.InnerText + ".pdf";
+                mail.Attachments.Add(@"d:\Friday Report\" + ReportName);
+                mail.Subject = "Application Packaging – Weekly Summary";
+                CustomerName = "<b>" + CustomerName + "</b> <br>";
+                string body = mail.Body;
+                string new_body = body.Replace("CustomerName", CustomerName);
+                mail.HTMLBody = new_body;
+                mail.Display(true);
+                mail.Close(Outlook.OlInspectorClose.olDiscard);
+
+            }
+        }
+
         private void customIDComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var xml = new XmlDocument();
@@ -341,10 +373,10 @@ namespace WindowsFormsApplication1
             customCustomerName = customIDComboBox.Text;
             string customInvoiceId;
 
-            XmlNode nodeListCustomer = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Customer.ID", customCustomerName));
-            XmlNode nodeListInvoice = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Invoice.ID", customCustomerName));
-            XmlNode nodeListRepName = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName));
-            XmlNodeList nodeList = xml.DocumentElement.SelectNodes(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']", customCustomerName));
+            XmlNode nodeListCustomer = xml.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Customer.ID", customCustomerName));
+            XmlNode nodeListInvoice = xml.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Invoice.ID", customCustomerName));
+            XmlNode nodeListRepName = xml.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName));
+            XmlNodeList nodeList = xml.DocumentElement.SelectNodes(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']", customCustomerName));
 
             customInvoiceCmBox.Items.Clear();
 
@@ -401,16 +433,14 @@ namespace WindowsFormsApplication1
             xml.Load(pathToXml);
 
             string CustomerName;
-            string InvoiceId;
-
 
             foreach (object itemChecked in customerCheckListBox.CheckedItems)
             {
                 CustomerName = itemChecked.ToString();
 
-                XmlNode nodeListCustomerID = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Customer.ID", CustomerName));
-                XmlNode nodeListInvoiceID = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Invoice.ID", CustomerName));
-                XmlNode nodeListReportName = xml.DocumentElement.SelectSingleNode(String.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", CustomerName));
+                XmlNode nodeListCustomerID = xml.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Customer.ID", CustomerName));
+                XmlNode nodeListInvoiceID = xml.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/Invoice.ID", CustomerName));
+                XmlNode nodeListReportName = xml.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", CustomerName));
 
                 var temp = nodeListCustomerID.InnerText;
                 var temp1 = nodeListInvoiceID.InnerText;
@@ -426,5 +456,7 @@ namespace WindowsFormsApplication1
                 report.ExportDocument(StiExportFormat.Pdf, pathToReports + temp2 + ".pdf");
             }
         }
+
+
     }
 }

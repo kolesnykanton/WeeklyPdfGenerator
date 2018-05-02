@@ -69,5 +69,53 @@ namespace weekly_namespace.Properties {
                 this["reportDirPath"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("d:\\Friday Report\\#TEMPLATES\\template.oft")]
+        public string mailTemplatePath {
+            get {
+                return ((string)(this["mailTemplatePath"]));
+            }
+            set {
+                this["mailTemplatePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string mailSubject {
+            get {
+                return ((string)(this["mailSubject"]));
+            }
+            set {
+                this["mailSubject"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string mailSender {
+            get {
+                return ((string)(this["mailSender"]));
+            }
+            set {
+                this["mailSender"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string mailReceiver {
+            get {
+                return ((string)(this["mailReceiver"]));
+            }
+            set {
+                this["mailReceiver"] = value;
+            }
+        }
     }
 }

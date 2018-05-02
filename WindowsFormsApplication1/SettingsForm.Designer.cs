@@ -28,27 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mrtFilePath = new System.Windows.Forms.TextBox();
             this.mrtPathLabel = new System.Windows.Forms.Label();
             this.reportDirPathLabel = new System.Windows.Forms.Label();
-            this.reportDirPath = new System.Windows.Forms.TextBox();
             this.applyButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pathXmlLabel = new System.Windows.Forms.Label();
-            this.xmlPathTxtBox = new System.Windows.Forms.TextBox();
             this.mailTestBtn = new System.Windows.Forms.Button();
+            this.xmlPathTxtBox = new System.Windows.Forms.TextBox();
+            this.reportDirPath = new System.Windows.Forms.TextBox();
+            this.mrtFilePath = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
-            // 
-            // mrtFilePath
-            // 
-            this.mrtFilePath.BackColor = System.Drawing.SystemColors.Window;
-            this.mrtFilePath.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::weekly_namespace.Properties.Settings.Default, "mrtPath", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.mrtFilePath.Location = new System.Drawing.Point(109, 23);
-            this.mrtFilePath.Name = "mrtFilePath";
-            this.mrtFilePath.Size = new System.Drawing.Size(136, 20);
-            this.mrtFilePath.TabIndex = 0;
-            this.mrtFilePath.Text = global::weekly_namespace.Properties.Settings.Default.mrtPath;
-            this.mrtFilePath.TextChanged += new System.EventHandler(this.mrtFilePath_TextChanged);
             // 
             // mrtPathLabel
             // 
@@ -68,17 +57,6 @@
             this.reportDirPathLabel.Size = new System.Drawing.Size(96, 13);
             this.reportDirPathLabel.TabIndex = 3;
             this.reportDirPathLabel.Text = "Path To Report Dir";
-            // 
-            // reportDirPath
-            // 
-            this.reportDirPath.BackColor = System.Drawing.SystemColors.Window;
-            this.reportDirPath.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::weekly_namespace.Properties.Settings.Default, "reportDirPath", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
-            this.reportDirPath.Location = new System.Drawing.Point(109, 62);
-            this.reportDirPath.Name = "reportDirPath";
-            this.reportDirPath.Size = new System.Drawing.Size(136, 20);
-            this.reportDirPath.TabIndex = 2;
-            this.reportDirPath.Text = global::weekly_namespace.Properties.Settings.Default.reportDirPath;
-            this.reportDirPath.TextChanged += new System.EventHandler(this.reportDirPath_TextChanged);
             // 
             // applyButton
             // 
@@ -107,6 +85,16 @@
             this.pathXmlLabel.TabIndex = 7;
             this.pathXmlLabel.Text = "Path To Xml File";
             // 
+            // mailTestBtn
+            // 
+            this.mailTestBtn.Location = new System.Drawing.Point(161, 247);
+            this.mailTestBtn.Name = "mailTestBtn";
+            this.mailTestBtn.Size = new System.Drawing.Size(91, 32);
+            this.mailTestBtn.TabIndex = 9;
+            this.mailTestBtn.Text = "Mail Settings";
+            this.mailTestBtn.UseVisualStyleBackColor = true;
+            this.mailTestBtn.Click += new System.EventHandler(this.mailTestBtn_Click);
+            // 
             // xmlPathTxtBox
             // 
             this.xmlPathTxtBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::weekly_namespace.Properties.Settings.Default, "XmlPath", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
@@ -116,15 +104,27 @@
             this.xmlPathTxtBox.TabIndex = 8;
             this.xmlPathTxtBox.Text = global::weekly_namespace.Properties.Settings.Default.XmlPath;
             // 
-            // mailTestBtn
+            // reportDirPath
             // 
-            this.mailTestBtn.Location = new System.Drawing.Point(15, 149);
-            this.mailTestBtn.Name = "mailTestBtn";
-            this.mailTestBtn.Size = new System.Drawing.Size(75, 23);
-            this.mailTestBtn.TabIndex = 9;
-            this.mailTestBtn.Text = "mail_test";
-            this.mailTestBtn.UseVisualStyleBackColor = true;
-            this.mailTestBtn.Click += new System.EventHandler(this.mailTestBtn_Click);
+            this.reportDirPath.BackColor = System.Drawing.SystemColors.Window;
+            this.reportDirPath.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::weekly_namespace.Properties.Settings.Default, "reportDirPath", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.reportDirPath.Location = new System.Drawing.Point(109, 62);
+            this.reportDirPath.Name = "reportDirPath";
+            this.reportDirPath.Size = new System.Drawing.Size(136, 20);
+            this.reportDirPath.TabIndex = 2;
+            this.reportDirPath.Text = global::weekly_namespace.Properties.Settings.Default.reportDirPath;
+            this.reportDirPath.TextChanged += new System.EventHandler(this.reportDirPath_TextChanged);
+            // 
+            // mrtFilePath
+            // 
+            this.mrtFilePath.BackColor = System.Drawing.SystemColors.Window;
+            this.mrtFilePath.DataBindings.Add(new System.Windows.Forms.Binding("Text", global::weekly_namespace.Properties.Settings.Default, "mrtPath", true, System.Windows.Forms.DataSourceUpdateMode.OnPropertyChanged));
+            this.mrtFilePath.Location = new System.Drawing.Point(109, 23);
+            this.mrtFilePath.Name = "mrtFilePath";
+            this.mrtFilePath.Size = new System.Drawing.Size(136, 20);
+            this.mrtFilePath.TabIndex = 0;
+            this.mrtFilePath.Text = global::weekly_namespace.Properties.Settings.Default.mrtPath;
+            this.mrtFilePath.TextChanged += new System.EventHandler(this.mrtFilePath_TextChanged);
             // 
             // SettingsForm
             // 

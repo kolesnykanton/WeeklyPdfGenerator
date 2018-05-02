@@ -156,6 +156,12 @@
     <Compile Include="DataGridForm.Designer.cs">
       <DependentUpon>DataGridForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MailForm.Designer.cs">
+      <DependentUpon>MailForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Settings.cs" />
@@ -170,6 +176,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="DataGridForm.resx">
       <DependentUpon>DataGridForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MailForm.resx">
+      <DependentUpon>MailForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

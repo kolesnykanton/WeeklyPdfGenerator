@@ -62,6 +62,7 @@
             this.customerIdTxtBox = new System.Windows.Forms.TextBox();
             this.customerCheckListBox = new System.Windows.Forms.CheckedListBox();
             this.genCheckedBtn = new System.Windows.Forms.Button();
+            this.mailButton = new System.Windows.Forms.Button();
             this.customIDBox.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -288,7 +289,7 @@
             // 
             this.settingButton.Location = new System.Drawing.Point(213, 82);
             this.settingButton.Name = "settingButton";
-            this.settingButton.Size = new System.Drawing.Size(151, 29);
+            this.settingButton.Size = new System.Drawing.Size(68, 29);
             this.settingButton.TabIndex = 18;
             this.settingButton.Text = "Settings";
             this.settingButton.UseVisualStyleBackColor = true;
@@ -444,12 +445,23 @@
             this.genCheckedBtn.UseVisualStyleBackColor = true;
             this.genCheckedBtn.Click += new System.EventHandler(this.genCheckedBtn_Click);
             // 
+            // mailButton
+            // 
+            this.mailButton.Location = new System.Drawing.Point(288, 83);
+            this.mailButton.Name = "mailButton";
+            this.mailButton.Size = new System.Drawing.Size(75, 28);
+            this.mailButton.TabIndex = 24;
+            this.mailButton.Text = "Mail";
+            this.mailButton.UseVisualStyleBackColor = true;
+            this.mailButton.Click += new System.EventHandler(this.mailButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(391, 361);
+            this.Controls.Add(this.mailButton);
             this.Controls.Add(this.genCheckedBtn);
             this.Controls.Add(this.customerCheckListBox);
             this.Controls.Add(this.customIDBox);
@@ -518,6 +530,7 @@
         private System.Windows.Forms.CheckedListBox customerCheckListBox;
         private System.Windows.Forms.Button genCheckedBtn;
         private System.Windows.Forms.ComboBox customInvoiceCmBox;
+        private System.Windows.Forms.Button mailButton;
     }
 }
 

@@ -19,5 +19,17 @@
     <Setting Name="reportDirPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">d:\Friday Report\</Value>
     </Setting>
+    <Setting Name="mailTemplatePath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">d:\Friday Report\#TEMPLATES\template.oft</Value>
+    </Setting>
+    <Setting Name="mailSubject" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mailSender" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="mailReceiver" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
