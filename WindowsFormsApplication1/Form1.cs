@@ -33,7 +33,7 @@ namespace WindowsFormsApplication1
                 this.report = new Stimulsoft.Report.StiReport();
             }
 
-            report.Load(pathToMrt + "Packaging Summary.mrt");
+            report.Load(pathToMrt);
             report.Compile();
             
 
@@ -334,37 +334,6 @@ namespace WindowsFormsApplication1
                 sf.ShowDialog();
         }
 
-        private void mailButton_Click(object sender, EventArgs e)
-        {
-                        
-            var doc = new XmlDocument();
-            doc.Load(Settings.Default.XmlPath);
-            XmlNodeList nodeList = doc.DocumentElement.SelectNodes("/dataroot/Customers/Customer");
-
-            foreach (object itemChecked in customerCheckListBox.CheckedItems)
-            {
-
-                string CustomerName = itemChecked.ToString();
-
-                XmlNode nodeListReportName = doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", CustomerName));
-
-                Outlook.Application mailApplication = new Outlook.Application();
-
-                Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(@"d:\Friday Report\#TEMPLATES\template.oft") as Outlook.MailItem;
-                mail.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
-                var ReportName = nodeListReportName.InnerText + ".pdf";
-                mail.Attachments.Add(@"d:\Friday Report\" + ReportName);
-                mail.Subject = "Application Packaging – Weekly Summary";
-                CustomerName = "<b>" + CustomerName + "</b> <br>";
-                string body = mail.Body;
-                string new_body = body.Replace("CustomerName", CustomerName);
-                mail.HTMLBody = new_body;
-                mail.Display(true);
-                mail.Close(Outlook.OlInspectorClose.olDiscard);
-
-            }
-        }
-
         private void customIDComboBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             var xml = new XmlDocument();
@@ -425,6 +394,37 @@ namespace WindowsFormsApplication1
         private void showAllBtn_Click(object sender, EventArgs e)
         {
             customIDBox.Visible = !customIDBox.Visible;
+        }
+
+        private void mailButton_Click(object sender, EventArgs e)
+        {
+
+            var doc = new XmlDocument();
+            doc.Load(Settings.Default.XmlPath);
+            XmlNodeList nodeList = doc.DocumentElement.SelectNodes("/dataroot/Customers/Customer");
+
+            foreach (object itemChecked in customerCheckListBox.CheckedItems)
+            {
+
+                string CustomerName = itemChecked.ToString();
+
+                XmlNode nodeListReportName = doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", CustomerName));
+
+                Outlook.Application mailApplication = new Outlook.Application();
+
+                Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(@"d:\Friday Report\#TEMPLATES\template.oft") as Outlook.MailItem;
+                mail.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
+                var ReportName = nodeListReportName.InnerText + ".pdf";
+                mail.Attachments.Add(pathToReports + ReportName);
+                mail.Subject = "Application Packaging – Weekly Summary";
+                CustomerName = "<b>" + CustomerName + "</b> <br>";
+                string body = mail.Body;
+                string new_body = body.Replace("CustomerName", CustomerName);
+                mail.HTMLBody = new_body;
+                mail.Display(true);
+                mail.Close(Outlook.OlInspectorClose.olDiscard);
+
+            }
         }
 
         private void genCheckedBtn_Click(object sender, EventArgs e)

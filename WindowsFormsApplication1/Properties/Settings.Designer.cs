@@ -48,7 +48,7 @@ namespace weekly_namespace.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("d:\\Friday Report\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("d:\\Friday Report\\Packaging Summary.mrt")]
         public string mrtPath {
             get {
                 return ((string)(this["mrtPath"]));

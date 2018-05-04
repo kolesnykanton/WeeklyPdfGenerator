@@ -37,6 +37,7 @@
             this.mailSubjLbl = new System.Windows.Forms.Label();
             this.SenderLbl = new System.Windows.Forms.Label();
             this.ReceiverLbl = new System.Windows.Forms.Label();
+            this.applyBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // sentMail_btn
@@ -57,6 +58,7 @@
             this.mailTemplateTxtBox.Size = new System.Drawing.Size(148, 20);
             this.mailTemplateTxtBox.TabIndex = 1;
             this.mailTemplateTxtBox.Text = global::weekly_namespace.Properties.Settings.Default.mailTemplatePath;
+            this.mailTemplateTxtBox.TextChanged += new System.EventHandler(this.mailTemplateTxtBox_TextChanged);
             // 
             // mailSubjTxtBox
             // 
@@ -66,6 +68,7 @@
             this.mailSubjTxtBox.Size = new System.Drawing.Size(148, 20);
             this.mailSubjTxtBox.TabIndex = 2;
             this.mailSubjTxtBox.Text = global::weekly_namespace.Properties.Settings.Default.mailSubject;
+            this.mailSubjTxtBox.TextChanged += new System.EventHandler(this.mailSubjTxtBox_TextChanged);
             // 
             // mailSenderTxtBox
             // 
@@ -75,6 +78,7 @@
             this.mailSenderTxtBox.Size = new System.Drawing.Size(148, 20);
             this.mailSenderTxtBox.TabIndex = 3;
             this.mailSenderTxtBox.Text = global::weekly_namespace.Properties.Settings.Default.mailSender;
+            this.mailSenderTxtBox.TextChanged += new System.EventHandler(this.mailSenderTxtBox_TextChanged);
             // 
             // mailRecievTxtBox
             // 
@@ -84,6 +88,7 @@
             this.mailRecievTxtBox.Size = new System.Drawing.Size(148, 20);
             this.mailRecievTxtBox.TabIndex = 4;
             this.mailRecievTxtBox.Text = global::weekly_namespace.Properties.Settings.Default.mailReceiver;
+            this.mailRecievTxtBox.TextChanged += new System.EventHandler(this.mailRecievTxtBox_TextChanged);
             // 
             // templatePathLbl
             // 
@@ -121,11 +126,21 @@
             this.ReceiverLbl.TabIndex = 8;
             this.ReceiverLbl.Text = "Receiver";
             // 
+            // applyBtn
+            // 
+            this.applyBtn.Location = new System.Drawing.Point(203, 161);
+            this.applyBtn.Name = "applyBtn";
+            this.applyBtn.Size = new System.Drawing.Size(75, 23);
+            this.applyBtn.TabIndex = 9;
+            this.applyBtn.Text = "Apply";
+            this.applyBtn.UseVisualStyleBackColor = true;
+            // 
             // MailForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(290, 320);
+            this.Controls.Add(this.applyBtn);
             this.Controls.Add(this.ReceiverLbl);
             this.Controls.Add(this.SenderLbl);
             this.Controls.Add(this.mailSubjLbl);
@@ -153,5 +168,6 @@
         private System.Windows.Forms.Label mailSubjLbl;
         private System.Windows.Forms.Label SenderLbl;
         private System.Windows.Forms.Label ReceiverLbl;
+        private System.Windows.Forms.Button applyBtn;
     }
 }

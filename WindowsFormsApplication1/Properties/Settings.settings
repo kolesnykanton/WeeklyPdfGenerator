@@ -14,7 +14,7 @@
       <Value Profile="(Default)">c:/Users/antonk/Documents/Visual Studio 2015/Projects/WindowsFormsApplication1/Dependecies/xml/AAAA.xml</Value>
     </Setting>
     <Setting Name="mrtPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">d:\Friday Report\</Value>
+      <Value Profile="(Default)">d:\Friday Report\Packaging Summary.mrt</Value>
     </Setting>
     <Setting Name="reportDirPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">d:\Friday Report\</Value>
