@@ -51,6 +51,7 @@ namespace WindowsFormsApplication1
                 customIDComboBox.Items.Add(customCustomerName);
             }
 
+            customerCheckListBox.Items.Add("Select All");
             foreach (XmlNode node in nodeList)
             {
                 customCustomerName = node.SelectSingleNode("CustomerName").InnerText;
@@ -373,14 +374,22 @@ namespace WindowsFormsApplication1
 
             StiPdfExportSettings pdfSettings = new StiPdfExportSettings();
 
-            report.ExportDocument(StiExportFormat.Pdf, pathToReports + repNameTxtBox.Text + " - Packaging Summary.Pdf");
+            report.ExportDocument(StiExportFormat.Pdf, pathToReports + repNameTxtBox.Text);
         }
 
         private void saveCustRep_Click(object sender, EventArgs e)
         {
-            MessageBox.Show(customerIdTxtBox.Text);
-            MessageBox.Show(invoiceIdTxtBox.Text);
-            MessageBox.Show(repNameTxtBox.Text);
+            var doc = new XmlDocument();
+            doc.Load(pathToXml);
+            //XmlNodeList nodeList = doc.DocumentElement.SelectNodes("/dataroot/Customers/Customer");
+            //doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = "NEW Report Name";
+            //doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = "NEW Report Name";
+            var test = doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = repNameTxtBox.Text;
+
+            //MessageBox.Show(customerIdTxtBox.Text);
+            //MessageBox.Show(invoiceIdTxtBox.Text);
+            MessageBox.Show(test);
+            doc.Save(@"d:\Friday Report\testXML.xml");
         }
 
         private void showDataGridBtn_Click(object sender, EventArgs e)
@@ -422,7 +431,7 @@ namespace WindowsFormsApplication1
                 string new_body = body.Replace("CustomerName", CustomerName);
                 mail.HTMLBody = new_body;
                 mail.Display(true);
-                mail.Close(Outlook.OlInspectorClose.olDiscard);
+                //mail.Close(Outlook.OlInspectorClose.olDiscard);
 
             }
         }
@@ -457,6 +466,23 @@ namespace WindowsFormsApplication1
             }
         }
 
-
+        private void customerCheckListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+            if (customerCheckListBox.SelectedIndex.Equals(0))
+            {
+                var checkState = customerCheckListBox.GetItemCheckState(0);
+                if (checkState == CheckState.Checked)
+                {
+                    for (int i = 1; i < customerCheckListBox.Items.Count; i++)
+                        customerCheckListBox.SetItemChecked(i, true);
+                }
+                else
+                {
+                    for (int i = 1; i < customerCheckListBox.Items.Count; i++)
+                        customerCheckListBox.SetItemChecked(i, false);
+                }
+            }
+        }
     }
 }

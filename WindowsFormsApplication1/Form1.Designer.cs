@@ -433,6 +433,7 @@
             this.customerCheckListBox.Name = "customerCheckListBox";
             this.customerCheckListBox.Size = new System.Drawing.Size(167, 319);
             this.customerCheckListBox.TabIndex = 22;
+            this.customerCheckListBox.SelectedIndexChanged += new System.EventHandler(this.customerCheckListBox_SelectedIndexChanged);
             // 
             // genCheckedBtn
             // 
