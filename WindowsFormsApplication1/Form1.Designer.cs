@@ -69,9 +69,10 @@
             // tullowButton
             // 
             this.tullowButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.tullowButton.Location = new System.Drawing.Point(84, 47);
+            this.tullowButton.Location = new System.Drawing.Point(224, 112);
+            this.tullowButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tullowButton.Name = "tullowButton";
-            this.tullowButton.Size = new System.Drawing.Size(66, 22);
+            this.tullowButton.Size = new System.Drawing.Size(176, 52);
             this.tullowButton.TabIndex = 20;
             this.tullowButton.Text = "Tullow";
             this.tullowButton.UseVisualStyleBackColor = true;
@@ -82,9 +83,10 @@
             // 
             this.button2.AccessibleName = "";
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.Location = new System.Drawing.Point(12, 152);
+            this.button2.Location = new System.Drawing.Point(32, 362);
+            this.button2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(66, 22);
+            this.button2.Size = new System.Drawing.Size(176, 52);
             this.button2.TabIndex = 1;
             this.button2.Text = "Intuit\r\n";
             this.button2.UseVisualStyleBackColor = true;
@@ -93,9 +95,10 @@
             // 
             // genAllBtn
             // 
-            this.genAllBtn.Location = new System.Drawing.Point(213, 12);
+            this.genAllBtn.Location = new System.Drawing.Point(568, 29);
+            this.genAllBtn.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.genAllBtn.Name = "genAllBtn";
-            this.genAllBtn.Size = new System.Drawing.Size(151, 29);
+            this.genAllBtn.Size = new System.Drawing.Size(403, 69);
             this.genAllBtn.TabIndex = 0;
             this.genAllBtn.Text = "Generate ALL";
             this.genAllBtn.UseVisualStyleBackColor = true;
@@ -105,9 +108,10 @@
             // 
             this.aimiaButton.AccessibleName = "";
             this.aimiaButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.aimiaButton.Location = new System.Drawing.Point(12, 12);
+            this.aimiaButton.Location = new System.Drawing.Point(32, 29);
+            this.aimiaButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.aimiaButton.Name = "aimiaButton";
-            this.aimiaButton.Size = new System.Drawing.Size(66, 22);
+            this.aimiaButton.Size = new System.Drawing.Size(176, 52);
             this.aimiaButton.TabIndex = 4;
             this.aimiaButton.Text = "Aimia";
             this.aimiaButton.UseVisualStyleBackColor = true;
@@ -117,9 +121,10 @@
             // MiddlesexButton
             // 
             this.MiddlesexButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.MiddlesexButton.Location = new System.Drawing.Point(12, 222);
+            this.MiddlesexButton.Location = new System.Drawing.Point(32, 529);
+            this.MiddlesexButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MiddlesexButton.Name = "MiddlesexButton";
-            this.MiddlesexButton.Size = new System.Drawing.Size(66, 22);
+            this.MiddlesexButton.Size = new System.Drawing.Size(176, 52);
             this.MiddlesexButton.TabIndex = 3;
             this.MiddlesexButton.Text = "Middlesex";
             this.MiddlesexButton.UseVisualStyleBackColor = true;
@@ -130,9 +135,10 @@
             // 
             this.morrisonsButton.AccessibleName = "";
             this.morrisonsButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.morrisonsButton.Location = new System.Drawing.Point(12, 257);
+            this.morrisonsButton.Location = new System.Drawing.Point(32, 613);
+            this.morrisonsButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.morrisonsButton.Name = "morrisonsButton";
-            this.morrisonsButton.Size = new System.Drawing.Size(66, 22);
+            this.morrisonsButton.Size = new System.Drawing.Size(176, 52);
             this.morrisonsButton.TabIndex = 6;
             this.morrisonsButton.Text = "Morrisons";
             this.morrisonsButton.UseVisualStyleBackColor = true;
@@ -142,9 +148,10 @@
             // maceButton
             // 
             this.maceButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.maceButton.Location = new System.Drawing.Point(12, 187);
+            this.maceButton.Location = new System.Drawing.Point(32, 446);
+            this.maceButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.maceButton.Name = "maceButton";
-            this.maceButton.Size = new System.Drawing.Size(66, 22);
+            this.maceButton.Size = new System.Drawing.Size(176, 52);
             this.maceButton.TabIndex = 5;
             this.maceButton.Text = "Mace";
             this.maceButton.UseVisualStyleBackColor = true;
@@ -155,9 +162,10 @@
             // 
             this.airbusButton.AccessibleName = "";
             this.airbusButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.airbusButton.Location = new System.Drawing.Point(12, 47);
+            this.airbusButton.Location = new System.Drawing.Point(32, 112);
+            this.airbusButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.airbusButton.Name = "airbusButton";
-            this.airbusButton.Size = new System.Drawing.Size(66, 22);
+            this.airbusButton.Size = new System.Drawing.Size(176, 52);
             this.airbusButton.TabIndex = 8;
             this.airbusButton.Text = "AirBus";
             this.airbusButton.UseVisualStyleBackColor = true;
@@ -167,9 +175,10 @@
             // munichreButton
             // 
             this.munichreButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.munichreButton.Location = new System.Drawing.Point(12, 292);
+            this.munichreButton.Location = new System.Drawing.Point(32, 696);
+            this.munichreButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.munichreButton.Name = "munichreButton";
-            this.munichreButton.Size = new System.Drawing.Size(66, 22);
+            this.munichreButton.Size = new System.Drawing.Size(176, 52);
             this.munichreButton.TabIndex = 7;
             this.munichreButton.Text = "MunichRe";
             this.munichreButton.UseVisualStyleBackColor = true;
@@ -180,9 +189,10 @@
             // 
             this.careButton.AccessibleName = "";
             this.careButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.careButton.Location = new System.Drawing.Point(12, 117);
+            this.careButton.Location = new System.Drawing.Point(32, 279);
+            this.careButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.careButton.Name = "careButton";
-            this.careButton.Size = new System.Drawing.Size(66, 22);
+            this.careButton.Size = new System.Drawing.Size(176, 52);
             this.careButton.TabIndex = 10;
             this.careButton.Text = "Care UK";
             this.careButton.UseVisualStyleBackColor = true;
@@ -192,9 +202,10 @@
             // cameronButton
             // 
             this.cameronButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cameronButton.Location = new System.Drawing.Point(12, 82);
+            this.cameronButton.Location = new System.Drawing.Point(32, 196);
+            this.cameronButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.cameronButton.Name = "cameronButton";
-            this.cameronButton.Size = new System.Drawing.Size(66, 22);
+            this.cameronButton.Size = new System.Drawing.Size(176, 52);
             this.cameronButton.TabIndex = 9;
             this.cameronButton.Text = "Cameron";
             this.cameronButton.UseVisualStyleBackColor = true;
@@ -204,9 +215,10 @@
             // plymouthButton
             // 
             this.plymouthButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.plymouthButton.Location = new System.Drawing.Point(84, 222);
+            this.plymouthButton.Location = new System.Drawing.Point(224, 529);
+            this.plymouthButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.plymouthButton.Name = "plymouthButton";
-            this.plymouthButton.Size = new System.Drawing.Size(66, 22);
+            this.plymouthButton.Size = new System.Drawing.Size(176, 52);
             this.plymouthButton.TabIndex = 11;
             this.plymouthButton.Text = "Plymouth";
             this.plymouthButton.UseVisualStyleBackColor = true;
@@ -216,9 +228,10 @@
             // rwjfButton
             // 
             this.rwjfButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.rwjfButton.Location = new System.Drawing.Point(84, 292);
+            this.rwjfButton.Location = new System.Drawing.Point(224, 696);
+            this.rwjfButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.rwjfButton.Name = "rwjfButton";
-            this.rwjfButton.Size = new System.Drawing.Size(66, 22);
+            this.rwjfButton.Size = new System.Drawing.Size(176, 52);
             this.rwjfButton.TabIndex = 13;
             this.rwjfButton.Text = "RWJF";
             this.rwjfButton.UseVisualStyleBackColor = true;
@@ -228,9 +241,10 @@
             // poloButton
             // 
             this.poloButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.poloButton.Location = new System.Drawing.Point(84, 257);
+            this.poloButton.Location = new System.Drawing.Point(224, 613);
+            this.poloButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.poloButton.Name = "poloButton";
-            this.poloButton.Size = new System.Drawing.Size(66, 22);
+            this.poloButton.Size = new System.Drawing.Size(176, 52);
             this.poloButton.TabIndex = 12;
             this.poloButton.Text = "Polo Ralph Lauren";
             this.poloButton.UseVisualStyleBackColor = true;
@@ -240,9 +254,10 @@
             // umassButton
             // 
             this.umassButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.umassButton.Location = new System.Drawing.Point(84, 82);
+            this.umassButton.Location = new System.Drawing.Point(224, 196);
+            this.umassButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.umassButton.Name = "umassButton";
-            this.umassButton.Size = new System.Drawing.Size(66, 22);
+            this.umassButton.Size = new System.Drawing.Size(176, 52);
             this.umassButton.TabIndex = 15;
             this.umassButton.Text = "UMASS";
             this.umassButton.UseVisualStyleBackColor = true;
@@ -252,9 +267,10 @@
             // ssdButton
             // 
             this.ssdButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ssdButton.Location = new System.Drawing.Point(84, 12);
+            this.ssdButton.Location = new System.Drawing.Point(224, 29);
+            this.ssdButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.ssdButton.Name = "ssdButton";
-            this.ssdButton.Size = new System.Drawing.Size(66, 22);
+            this.ssdButton.Size = new System.Drawing.Size(176, 52);
             this.ssdButton.TabIndex = 14;
             this.ssdButton.Text = "SSD";
             this.ssdButton.UseVisualStyleBackColor = true;
@@ -264,9 +280,10 @@
             // umgButton
             // 
             this.umgButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.umgButton.Location = new System.Drawing.Point(84, 117);
+            this.umgButton.Location = new System.Drawing.Point(224, 279);
+            this.umgButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.umgButton.Name = "umgButton";
-            this.umgButton.Size = new System.Drawing.Size(66, 22);
+            this.umgButton.Size = new System.Drawing.Size(176, 52);
             this.umgButton.TabIndex = 16;
             this.umgButton.Text = "Universal";
             this.umgButton.UseVisualStyleBackColor = true;
@@ -276,9 +293,10 @@
             // weyerButton
             // 
             this.weyerButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.weyerButton.Location = new System.Drawing.Point(84, 152);
+            this.weyerButton.Location = new System.Drawing.Point(224, 362);
+            this.weyerButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.weyerButton.Name = "weyerButton";
-            this.weyerButton.Size = new System.Drawing.Size(66, 22);
+            this.weyerButton.Size = new System.Drawing.Size(176, 52);
             this.weyerButton.TabIndex = 17;
             this.weyerButton.Text = "Weyerhauser";
             this.weyerButton.UseVisualStyleBackColor = true;
@@ -287,9 +305,10 @@
             // 
             // settingButton
             // 
-            this.settingButton.Location = new System.Drawing.Point(213, 82);
+            this.settingButton.Location = new System.Drawing.Point(568, 196);
+            this.settingButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.settingButton.Name = "settingButton";
-            this.settingButton.Size = new System.Drawing.Size(68, 29);
+            this.settingButton.Size = new System.Drawing.Size(181, 69);
             this.settingButton.TabIndex = 18;
             this.settingButton.Text = "Settings";
             this.settingButton.UseVisualStyleBackColor = true;
@@ -298,9 +317,10 @@
             // progressButton
             // 
             this.progressButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.progressButton.Location = new System.Drawing.Point(84, 187);
+            this.progressButton.Location = new System.Drawing.Point(224, 446);
+            this.progressButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.progressButton.Name = "progressButton";
-            this.progressButton.Size = new System.Drawing.Size(66, 22);
+            this.progressButton.Size = new System.Drawing.Size(176, 52);
             this.progressButton.TabIndex = 19;
             this.progressButton.Text = "Progressive Insurance";
             this.progressButton.UseVisualStyleBackColor = true;
@@ -320,34 +340,39 @@
             this.customIDBox.Controls.Add(this.InvoceIDLabel);
             this.customIDBox.Controls.Add(this.customerIDLabel);
             this.customIDBox.Controls.Add(this.customerIdTxtBox);
-            this.customIDBox.Location = new System.Drawing.Point(213, 117);
+            this.customIDBox.Location = new System.Drawing.Point(568, 279);
+            this.customIDBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.customIDBox.Name = "customIDBox";
-            this.customIDBox.Size = new System.Drawing.Size(151, 216);
+            this.customIDBox.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.customIDBox.Size = new System.Drawing.Size(403, 515);
             this.customIDBox.TabIndex = 20;
             this.customIDBox.TabStop = false;
             this.customIDBox.Text = "Custom";
             // 
             // invoiceIdTxtBox
             // 
-            this.invoiceIdTxtBox.Location = new System.Drawing.Point(61, 79);
+            this.invoiceIdTxtBox.Location = new System.Drawing.Point(163, 188);
+            this.invoiceIdTxtBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.invoiceIdTxtBox.Name = "invoiceIdTxtBox";
-            this.invoiceIdTxtBox.Size = new System.Drawing.Size(26, 20);
+            this.invoiceIdTxtBox.Size = new System.Drawing.Size(63, 38);
             this.invoiceIdTxtBox.TabIndex = 1;
             this.invoiceIdTxtBox.Visible = false;
             // 
             // customInvoiceCmBox
             // 
             this.customInvoiceCmBox.FormattingEnabled = true;
-            this.customInvoiceCmBox.Location = new System.Drawing.Point(93, 79);
+            this.customInvoiceCmBox.Location = new System.Drawing.Point(248, 188);
+            this.customInvoiceCmBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.customInvoiceCmBox.Name = "customInvoiceCmBox";
-            this.customInvoiceCmBox.Size = new System.Drawing.Size(40, 21);
+            this.customInvoiceCmBox.Size = new System.Drawing.Size(100, 39);
             this.customInvoiceCmBox.TabIndex = 23;
             // 
             // showDataGridBtn
             // 
-            this.showDataGridBtn.Location = new System.Drawing.Point(9, 182);
+            this.showDataGridBtn.Location = new System.Drawing.Point(24, 434);
+            this.showDataGridBtn.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.showDataGridBtn.Name = "showDataGridBtn";
-            this.showDataGridBtn.Size = new System.Drawing.Size(124, 23);
+            this.showDataGridBtn.Size = new System.Drawing.Size(331, 55);
             this.showDataGridBtn.TabIndex = 22;
             this.showDataGridBtn.Text = "Show xml data";
             this.showDataGridBtn.UseVisualStyleBackColor = true;
@@ -355,9 +380,10 @@
             // 
             // saveCustRep
             // 
-            this.saveCustRep.Location = new System.Drawing.Point(74, 153);
+            this.saveCustRep.Location = new System.Drawing.Point(197, 365);
+            this.saveCustRep.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.saveCustRep.Name = "saveCustRep";
-            this.saveCustRep.Size = new System.Drawing.Size(59, 23);
+            this.saveCustRep.Size = new System.Drawing.Size(157, 55);
             this.saveCustRep.TabIndex = 8;
             this.saveCustRep.Text = "Save";
             this.saveCustRep.UseVisualStyleBackColor = true;
@@ -365,9 +391,10 @@
             // 
             // genCustRep
             // 
-            this.genCustRep.Location = new System.Drawing.Point(9, 153);
+            this.genCustRep.Location = new System.Drawing.Point(24, 365);
+            this.genCustRep.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.genCustRep.Name = "genCustRep";
-            this.genCustRep.Size = new System.Drawing.Size(59, 23);
+            this.genCustRep.Size = new System.Drawing.Size(157, 55);
             this.genCustRep.TabIndex = 7;
             this.genCustRep.Text = "Generate";
             this.genCustRep.UseVisualStyleBackColor = true;
@@ -376,71 +403,79 @@
             // customRepName
             // 
             this.customRepName.AutoSize = true;
-            this.customRepName.Location = new System.Drawing.Point(6, 108);
+            this.customRepName.Location = new System.Drawing.Point(16, 258);
+            this.customRepName.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.customRepName.Name = "customRepName";
-            this.customRepName.Size = new System.Drawing.Size(101, 13);
+            this.customRepName.Size = new System.Drawing.Size(271, 32);
             this.customRepName.TabIndex = 6;
             this.customRepName.Text = "Custom report name";
             // 
             // repNameTxtBox
             // 
-            this.repNameTxtBox.Location = new System.Drawing.Point(9, 126);
-            this.repNameTxtBox.MaximumSize = new System.Drawing.Size(200, 40);
+            this.repNameTxtBox.Location = new System.Drawing.Point(24, 300);
+            this.repNameTxtBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.repNameTxtBox.MaximumSize = new System.Drawing.Size(527, 40);
             this.repNameTxtBox.Name = "repNameTxtBox";
-            this.repNameTxtBox.Size = new System.Drawing.Size(124, 20);
+            this.repNameTxtBox.Size = new System.Drawing.Size(324, 38);
             this.repNameTxtBox.TabIndex = 5;
             // 
             // customIDComboBox
             // 
             this.customIDComboBox.FormattingEnabled = true;
-            this.customIDComboBox.Location = new System.Drawing.Point(9, 20);
+            this.customIDComboBox.Location = new System.Drawing.Point(24, 48);
+            this.customIDComboBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.customIDComboBox.Name = "customIDComboBox";
             this.customIDComboBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.customIDComboBox.Size = new System.Drawing.Size(124, 21);
+            this.customIDComboBox.Size = new System.Drawing.Size(324, 39);
             this.customIDComboBox.TabIndex = 4;
             this.customIDComboBox.SelectedIndexChanged += new System.EventHandler(this.customIDComboBox_SelectedIndexChanged);
             // 
             // InvoceIDLabel
             // 
             this.InvoceIDLabel.AutoSize = true;
-            this.InvoceIDLabel.Location = new System.Drawing.Point(6, 82);
+            this.InvoceIDLabel.Location = new System.Drawing.Point(16, 196);
+            this.InvoceIDLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.InvoceIDLabel.Name = "InvoceIDLabel";
-            this.InvoceIDLabel.Size = new System.Drawing.Size(51, 13);
+            this.InvoceIDLabel.Size = new System.Drawing.Size(125, 32);
             this.InvoceIDLabel.TabIndex = 3;
             this.InvoceIDLabel.Text = "InvoceID";
             // 
             // customerIDLabel
             // 
             this.customerIDLabel.AutoSize = true;
-            this.customerIDLabel.Location = new System.Drawing.Point(6, 51);
+            this.customerIDLabel.Location = new System.Drawing.Point(16, 122);
+            this.customerIDLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.customerIDLabel.Name = "customerIDLabel";
-            this.customerIDLabel.Size = new System.Drawing.Size(62, 13);
+            this.customerIDLabel.Size = new System.Drawing.Size(164, 32);
             this.customerIDLabel.TabIndex = 2;
             this.customerIDLabel.Text = "CustomerID";
             // 
             // customerIdTxtBox
             // 
-            this.customerIdTxtBox.Location = new System.Drawing.Point(94, 48);
+            this.customerIdTxtBox.Location = new System.Drawing.Point(251, 114);
+            this.customerIdTxtBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.customerIdTxtBox.Name = "customerIdTxtBox";
-            this.customerIdTxtBox.Size = new System.Drawing.Size(39, 20);
+            this.customerIdTxtBox.Size = new System.Drawing.Size(97, 38);
             this.customerIdTxtBox.TabIndex = 0;
             // 
             // customerCheckListBox
             // 
             this.customerCheckListBox.CheckOnClick = true;
             this.customerCheckListBox.FormattingEnabled = true;
-            this.customerCheckListBox.Location = new System.Drawing.Point(12, 8);
+            this.customerCheckListBox.Location = new System.Drawing.Point(32, 19);
+            this.customerCheckListBox.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.customerCheckListBox.Name = "customerCheckListBox";
-            this.customerCheckListBox.Size = new System.Drawing.Size(167, 319);
+            this.customerCheckListBox.Size = new System.Drawing.Size(439, 739);
             this.customerCheckListBox.TabIndex = 22;
             this.customerCheckListBox.SelectedIndexChanged += new System.EventHandler(this.customerCheckListBox_SelectedIndexChanged);
             // 
             // genCheckedBtn
             // 
             this.genCheckedBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.genCheckedBtn.Location = new System.Drawing.Point(213, 47);
+            this.genCheckedBtn.Location = new System.Drawing.Point(568, 112);
+            this.genCheckedBtn.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.genCheckedBtn.Name = "genCheckedBtn";
-            this.genCheckedBtn.Size = new System.Drawing.Size(151, 29);
+            this.genCheckedBtn.Size = new System.Drawing.Size(403, 69);
             this.genCheckedBtn.TabIndex = 23;
             this.genCheckedBtn.Text = "Generate checked";
             this.genCheckedBtn.UseVisualStyleBackColor = true;
@@ -448,9 +483,10 @@
             // 
             // mailButton
             // 
-            this.mailButton.Location = new System.Drawing.Point(288, 83);
+            this.mailButton.Location = new System.Drawing.Point(768, 198);
+            this.mailButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.mailButton.Name = "mailButton";
-            this.mailButton.Size = new System.Drawing.Size(75, 28);
+            this.mailButton.Size = new System.Drawing.Size(200, 67);
             this.mailButton.TabIndex = 24;
             this.mailButton.Text = "Mail";
             this.mailButton.UseVisualStyleBackColor = true;
@@ -458,10 +494,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(391, 361);
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.ClientSize = new System.Drawing.Size(1033, 1100);
             this.Controls.Add(this.mailButton);
             this.Controls.Add(this.genCheckedBtn);
             this.Controls.Add(this.customerCheckListBox);
@@ -486,6 +523,7 @@
             this.Controls.Add(this.genAllBtn);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.tullowButton);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form1";
             this.Text = "WeeklyGenerator";
             this.Load += new System.EventHandler(this.Form1_Load);

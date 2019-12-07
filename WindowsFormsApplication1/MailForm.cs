@@ -55,7 +55,7 @@ namespace weekly_namespace
 
                 Microsoft.Office.Interop.Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(mailTemplateTxtBox.Text) as Microsoft.Office.Interop.Outlook.MailItem;
                 mail.BodyFormat = Microsoft.Office.Interop.Outlook.OlBodyFormat.olFormatHTML;
-                mail.Attachments.Add(@"d:\Friday Report\" + ReportName);
+                mail.Attachments.Add(Settings.Default.reportDirPath + ReportName);
                 mail.Subject = mailSubjTxtBox.Text;
                 mail.To  = mailRecievTxtBox.Text;
                 CustomerName = "<b>" + CustomerName + "</b> <br>";
@@ -66,6 +66,11 @@ namespace weekly_namespace
                 mail.Close(Microsoft.Office.Interop.Outlook.OlInspectorClose.olDiscard);
 
             }
+        }
+
+        private void applyBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

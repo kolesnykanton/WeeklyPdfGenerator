@@ -12,6 +12,8 @@ using System.Xml;
 using weekly_namespace;
 using weekly_namespace.Properties;
 using Outlook = Microsoft.Office.Interop.Outlook;
+using Microsoft.WindowsAPICodePack;
+using Microsoft.WindowsAPICodePack.Dialogs;
 
 namespace WindowsFormsApplication1
 {
@@ -44,7 +46,7 @@ namespace WindowsFormsApplication1
             mrtFilePath_TextChanged(sender, e);
             reportDirPath_TextChanged(sender, e);
             Settings.Default.Save();
-            //Hide();
+            Hide();
 
         }
         
@@ -78,5 +80,37 @@ namespace WindowsFormsApplication1
                 
             } **/
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DialogResult result = op_diag_mrt.ShowDialog(); // Show the dialog.
+            if (result == DialogResult.OK)
+            {
+                mrtFilePath.Text = op_diag_mrt.FileName;
+                
+            }
+        }
+        private void btn_browse_repo_dir_Click(object sender, EventArgs e)
+        {
+            //DialogResult result = fb_diag_repo_dir.ShowDialog(); // Show the dialog.
+            CommonOpenFileDialog dialog = new CommonOpenFileDialog();
+            dialog.InitialDirectory = "c:\\users";
+            //dialog.IsFolderPicker = true;
+
+            if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
+            {
+                reportDirPath.Text = dialog.FileName;
+            }
+        }
+        private void btn_browse_xml_Click(object sender, EventArgs e)
+        {
+            DialogResult result = op_diag_xml.ShowDialog(); // Show the dialog.
+            if (result == DialogResult.OK)
+            {
+                xmlPathTxtBox.Text = op_diag_xml.FileName;
+
+            }
+        }
+
     }
 }

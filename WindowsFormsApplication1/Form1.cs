@@ -379,22 +379,16 @@ namespace WindowsFormsApplication1
 
         private void saveCustRep_Click(object sender, EventArgs e)
         {
-            var doc = new XmlDocument();
-            doc.Load(pathToXml);
-            //XmlNodeList nodeList = doc.DocumentElement.SelectNodes("/dataroot/Customers/Customer");
-            //doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = "NEW Report Name";
-            //doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = "NEW Report Name";
-            var test = doc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = repNameTxtBox.Text;
-
-            //MessageBox.Show(customerIdTxtBox.Text);
-            //MessageBox.Show(invoiceIdTxtBox.Text);
-            MessageBox.Show(test);
-            doc.Save(@"d:\Friday Report\testXML.xml");
+            var xmlDoc = new XmlDocument();
+            xmlDoc.Load(pathToXml);
+            string newReportName = xmlDoc.DocumentElement.SelectSingleNode(string.Format("/dataroot/Customers/Customer[CustomerName='{0}']/ReportName", customCustomerName)).InnerText = repNameTxtBox.Text;
+            MessageBox.Show(newReportName,"New report name");
+            xmlDoc.Save(pathToXml);
         }
 
         private void showDataGridBtn_Click(object sender, EventArgs e)
         {
-            DataGridForm dgf = new DataGridForm();
+            dg_form_xml_data dgf = new dg_form_xml_data();
             dgf.Show();
 
 
@@ -421,7 +415,7 @@ namespace WindowsFormsApplication1
 
                 Outlook.Application mailApplication = new Outlook.Application();
 
-                Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(@"d:\Friday Report\#TEMPLATES\template.oft") as Outlook.MailItem;
+                Outlook.MailItem mail = mailApplication.CreateItemFromTemplate(Settings.Default.mailTemplatePath) as Outlook.MailItem;
                 mail.BodyFormat = Outlook.OlBodyFormat.olFormatHTML;
                 var ReportName = nodeListReportName.InnerText + ".pdf";
                 mail.Attachments.Add(pathToReports + ReportName);
@@ -440,7 +434,7 @@ namespace WindowsFormsApplication1
         {
             var xml = new XmlDocument();
             xml.Load(pathToXml);
-
+            customerCheckListBox.SetItemChecked(0, false);
             string CustomerName;
 
             foreach (object itemChecked in customerCheckListBox.CheckedItems)
@@ -482,6 +476,7 @@ namespace WindowsFormsApplication1
                     for (int i = 1; i < customerCheckListBox.Items.Count; i++)
                         customerCheckListBox.SetItemChecked(i, false);
                 }
+                
             }
         }
     }
