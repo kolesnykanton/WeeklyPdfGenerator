@@ -5,19 +5,19 @@
     <Setting Name="PackagingDBString" Type="(Connection string)" Scope="Application">
       <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source="d:\Friday Report\Packaging.accdb"&lt;/ConnectionString&gt;
+  &lt;ConnectionString&gt;Provider=Microsoft.ACE.OLEDB.12.0;Data Source="C:\Users\test\source\repos\WeeklyPdfGenerator\Dependecies\Packaging.accdb"&lt;/ConnectionString&gt;
   &lt;ProviderName&gt;System.Data.OleDb&lt;/ProviderName&gt;
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
-      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="d:\Friday Report\Packaging.accdb"</Value>
+      <Value Profile="(Default)">Provider=Microsoft.ACE.OLEDB.12.0;Data Source="C:\Users\test\source\repos\WeeklyPdfGenerator\Dependecies\Packaging.accdb"</Value>
     </Setting>
     <Setting Name="XmlPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">c:/Users/antonk/Documents/Visual Studio 2015/Projects/WindowsFormsApplication1/Dependecies/xml/AAAA.xml</Value>
+      <Value Profile="(Default)">C:\Users\test\source\repos\WeeklyPdfGenerator\Dependecies\xml\AAAA.xml</Value>
     </Setting>
     <Setting Name="mrtPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">d:\Friday Report\Packaging Summary.mrt</Value>
+      <Value Profile="(Default)">C:\Users\test\source\repos\WeeklyPdfGenerator\Dependecies\Packaging Summary.mrt</Value>
     </Setting>
     <Setting Name="reportDirPath" Type="System.String" Scope="User">
-      <Value Profile="(Default)">d:\Friday Report\</Value>
+      <Value Profile="(Default)">C:\Users\test\source\repos\WeeklyPdfGenerator\Friday Report</Value>
     </Setting>
     <Setting Name="mailTemplatePath" Type="System.String" Scope="User">
       <Value Profile="(Default)">d:\Friday Report\#TEMPLATES\template.oft</Value>
@@ -30,6 +30,9 @@
     </Setting>
     <Setting Name="mailReceiver" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="isFirstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

@@ -12,7 +12,7 @@ namespace weekly_namespace.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
     public sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -26,7 +26,8 @@ namespace weekly_namespace.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"d:\\Friday Report\\Packaging.accdb\"")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.ACE.OLEDB.12.0;Data Source=\"C:\\Users\\test\\source\\repos\\WeeklyP" +
+            "dfGenerator\\Dependecies\\Packaging.accdb\"")]
         public string PackagingDBString {
             get {
                 return ((string)(this["PackagingDBString"]));
@@ -35,8 +36,7 @@ namespace weekly_namespace.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("c:/Users/antonk/Documents/Visual Studio 2015/Projects/WindowsFormsApplication1/De" +
-            "pendecies/xml/AAAA.xml")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\test\\source\\repos\\WeeklyPdfGenerator\\Dependecies\\xml\\AAAA.xml")]
         public string XmlPath {
             get {
                 return ((string)(this["XmlPath"]));
@@ -48,7 +48,7 @@ namespace weekly_namespace.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("d:\\Friday Report\\Packaging Summary.mrt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\test\\source\\repos\\WeeklyPdfGenerator\\Dependecies\\Packaging Summary.mrt")]
         public string mrtPath {
             get {
                 return ((string)(this["mrtPath"]));
@@ -60,7 +60,7 @@ namespace weekly_namespace.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("d:\\Friday Report\\")]
+        [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\test\\source\\repos\\WeeklyPdfGenerator\\Friday Report")]
         public string reportDirPath {
             get {
                 return ((string)(this["reportDirPath"]));
@@ -115,6 +115,18 @@ namespace weekly_namespace.Properties {
             }
             set {
                 this["mailReceiver"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool isFirstRun {
+            get {
+                return ((bool)(this["isFirstRun"]));
+            }
+            set {
+                this["isFirstRun"] = value;
             }
         }
     }

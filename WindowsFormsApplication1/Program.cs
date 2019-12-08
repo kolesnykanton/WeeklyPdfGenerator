@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using weekly_namespace.Properties;
 
 namespace WindowsFormsApplication1
 {
@@ -16,8 +17,32 @@ namespace WindowsFormsApplication1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            openFirstRunSettings();
+            try
+            {
+                Application.Run(new MainWindow_Form());
+            }
+            catch (Exception ex)
+            {
+                Application.Run(new SettingsForm());
+
+                try { Application.Run(new MainWindow_Form()); }
+                catch (Exception ex2)
+                {
+                    MessageBox.Show(ex2.ToString(),"Error");
+                }
+            }
             
+            
+        }
+
+        private static void openFirstRunSettings()
+        {
+            if (Settings.Default.isFirstRun == true)
+            {
+                Settings.Default.isFirstRun = false;
+                Application.Run(new SettingsForm());
+            }
         }
     }
 }

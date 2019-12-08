@@ -70,7 +70,10 @@ namespace weekly_namespace
 
         private void applyBtn_Click(object sender, EventArgs e)
         {
-
+            Settings.Default.mailTemplatePath = mailTemplateTxtBox.Text;
+            Settings.Default.mailSubject = mailSubjTxtBox.Text;
+            Settings.Default.mailReceiver= mailRecievTxtBox.Text;
+            Settings.Default.mailSender = mailSenderTxtBox.Text;
         }
     }
 }

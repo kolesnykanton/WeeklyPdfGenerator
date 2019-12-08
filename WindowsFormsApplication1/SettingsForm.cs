@@ -20,7 +20,7 @@ namespace WindowsFormsApplication1
     public partial class SettingsForm : Form
     {
 
-        Form1 form1 = new Form1();
+        //Form1 form1 = new Form1();
 
         public SettingsForm()
         {
@@ -46,7 +46,7 @@ namespace WindowsFormsApplication1
             mrtFilePath_TextChanged(sender, e);
             reportDirPath_TextChanged(sender, e);
             Settings.Default.Save();
-            Hide();
+            Close();
 
         }
         
@@ -95,7 +95,7 @@ namespace WindowsFormsApplication1
             //DialogResult result = fb_diag_repo_dir.ShowDialog(); // Show the dialog.
             CommonOpenFileDialog dialog = new CommonOpenFileDialog();
             dialog.InitialDirectory = "c:\\users";
-            //dialog.IsFolderPicker = true;
+            dialog.IsFolderPicker = true;
 
             if (dialog.ShowDialog() == CommonFileDialogResult.Ok)
             {
